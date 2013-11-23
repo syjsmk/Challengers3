@@ -1,7 +1,7 @@
 'use strict';
 
 
-var problemListApp = angluar.module('problemListApp', []);
+var problemListApp = angular.module('problemListApp', []);
 //var problemListApp = module('problemListApp', []);
 
 
