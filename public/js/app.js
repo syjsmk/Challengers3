@@ -26,4 +26,7 @@ config(function ($routeProvider, $locationProvider) {
     });
 
   $locationProvider.html5Mode(true);
-});
+})
+    .controller('TestController', function($scope) {
+        $scope.name = 'Test';
+    });
