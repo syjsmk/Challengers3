@@ -9,7 +9,7 @@ angular.module('myApp', [
   'myApp.directives',
 
   // 3rd party dependencies
-  //'btford.socket-io'
+  'btford.socket-io'
 ]).
 config(function ($routeProvider, $locationProvider) {
   $routeProvider.
@@ -26,4 +26,7 @@ config(function ($routeProvider, $locationProvider) {
     });
 
   $locationProvider.html5Mode(true);
-});
+})
+    .controller('TestController', function($scope) {
+        $scope.name = 'Test';
+    });
